@@ -41,6 +41,7 @@
           </p>
         </div>
         <div class="main__cards">
+
           <div class="main__card">
             <div class="main__img-item">
               <img class="main__img" src="images/meal-icon.svg" alt="">
@@ -48,15 +49,50 @@
             <h4 class="main__title">Sushi</h4>
             <p class="main__subtitle">Finest fish and veggies</p>
             <div class="main__wrapper">
-              <div class="main__counter">
-                <div class="main__counter-control">-</div>
-                <div class="main__counter-current">1</div>
-                <div class="main__counter-control">+</div>
+              <div class="main__counter counter-wrapper">
+                <div id="minus" class="main__counter-control" data-action="minus">-</div>
+                <div id="counter" class="main__counter-current" data-counter>0</div>
+                <div id="plus" class="main__counter-control" data-action="plus">+</div>
               </div>
               <p class="main__price">22 $</p>
             </div>
             <button class="main__btn" type="submit">+ Add</button>
           </div>
+
+          <div class="main__card">
+            <div class="main__img-item">
+              <img class="main__img" src="images/meal-icon.svg" alt="">
+            </div>
+            <h4 class="main__title">Salad</h4>
+            <p class="main__subtitle">Lorem ipsum dolor sit amet.</p>
+            <div class="main__wrapper">
+              <div class="main__counter counter-wrapper">
+                <div class="main__counter-control" data-action="minus">-</div>
+                <div class="main__counter-current" data-counter>0</div>
+                <div class="main__counter-control" data-action="plus">+</div>
+              </div>
+              <p class="main__price">22 $</p>
+            </div>
+            <button class="main__btn" type="submit">+ Add</button>
+          </div>
+
+          <div class="main__card">
+            <div class="main__img-item">
+              <img class="main__img" src="images/meal-icon.svg" alt="">
+            </div>
+            <h4 class="main__title">Stake</h4>
+            <p class="main__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <div class="main__wrapper">
+              <div class="main__counter counter-wrapper">
+                <div class="main__counter-control" data-action="minus">-</div>
+                <div class="main__counter-current" data-counter>0</div>
+                <div class="main__counter-control" data-action="plus">+</div>
+              </div>
+              <p class="main__price">22 $</p>
+            </div>
+            <button class="main__btn" type="submit">+ Add</button>
+          </div>
+
         </div>
       </div>
     </div>
@@ -73,10 +109,10 @@
           <div class="popup__info">
             <p class="popup__text">Sushi</p>
             <p class="popup__subtitle">Finest fish and veggies</p>
-            <div class="popup__counter">
-              <div class="popup__counter-control">-</div>
-              <div class="popup__counter-current">1</div>
-              <div class="popup__counter-control">+</div>
+            <div class="popup__counter counter-wrapper">
+              <div class="popup__counter-control" data-action="minus">-</div>
+              <div class="popup__counter-current" data-counter>1</div>
+              <div class="popup__counter-control" data-action="plus">+</div>
             </div>
           </div>
         </div>
