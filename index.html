@@ -22,7 +22,7 @@
       <div class="header__top">
         <a class="header__logo" href="#">Meals</a>
         <div class="header__cart">
-          <img class="header__cart-logo" src="" alt="">
+          <img class="header__cart-logo" src="images/cart-icon.svg" alt="">
           <p class="header__cart-text">Your cart</p>
           <span class="header__cart-num">0</span>
         </div>
@@ -33,31 +33,60 @@
   <main class="main">
     <div class="container">
       <div class="main__box">
-        <div class="main__card">
-          <h4 class="main__title">Sushi</h4>
-          <p class="main__subtitle">Finest fish and veggies</p>
-          <div class="main__wrapper">
-            <div class="main__counter">
-              <div class="main__counter-control">-</div>
-              <div class="main__counter-current">1</div>
-              <div class="main__counter-control">+</div>
-            </div>
-            <p class="main__price">22 $</p>
-          </div>
-          <button class="main__btn" type="submit">+ Add</button>
+        <div class="main__info">
+          <h1 class="main__info-title">Delicious Food, Delivered To You</h1>
+          <p class="main__info-text">
+            Choose your favorite meal from our broad selection of available meals and enjoy a delicious lunch or dinner
+            at home.
+          </p>
         </div>
-
-        <ul class="main__list">
-          <li class="main__item">
-            <h3 class="main__title">Sushi</h3>
+        <div class="main__cards">
+          <div class="main__card">
+            <div class="main__img-item">
+              <img class="main__img" src="images/meal-icon.svg" alt="">
+            </div>
+            <h4 class="main__title">Sushi</h4>
             <p class="main__subtitle">Finest fish and veggies</p>
-            <span class="main__price">22 $</span>
-          </li>
-        </ul>
-
+            <div class="main__wrapper">
+              <div class="main__counter">
+                <div class="main__counter-control">-</div>
+                <div class="main__counter-current">1</div>
+                <div class="main__counter-control">+</div>
+              </div>
+              <p class="main__price">22 $</p>
+            </div>
+            <button class="main__btn" type="submit">+ Add</button>
+          </div>
+        </div>
       </div>
     </div>
   </main>
+
+  <section class="popup">
+    <div class="container">
+      <div class="popup__box">
+        <h3 class="popup__title">Your order :</h3>
+        <div class="popup__cart">
+          <div class="popup__img-item">
+            <img class="popup__img" src="images/meal-icon.svg" alt="">
+          </div>
+          <div class="popup__info">
+            <p class="popup__text">Sushi</p>
+            <p class="popup__subtitle">Finest fish and veggies</p>
+            <div class="popup__counter">
+              <div class="popup__counter-control">-</div>
+              <div class="popup__counter-current">1</div>
+              <div class="popup__counter-control">+</div>
+            </div>
+          </div>
+        </div>
+        <div class="popup__price">
+          <p class="popup__price-text">All :</p>
+          <p class="popup__price-sum">22 $</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 

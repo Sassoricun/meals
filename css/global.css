@@ -3,6 +3,9 @@ body {
   height: 100vh;
   background-color: rgb(239, 241, 232);
   color: #170e0e;
+  height: 100vh;
+  background-color: #fff;
+  position: relative;
 }
 
 .container {
