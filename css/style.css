@@ -1,0 +1,9 @@
+.header {
+  background-color: #cb6225;
+  width: 100%;
+}
+
+.header__cart-logo {
+  min-width: 100%;
+
+}
