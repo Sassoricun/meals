@@ -39,6 +39,7 @@
   align-items: center;
   padding: 0 10px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .header__cart-text {
@@ -160,7 +161,6 @@
   overflow: hidden;
   position: fixed;
   top: 0px;
-
   display: none;
 }
 
@@ -175,6 +175,7 @@
 
 .popup__close {
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .popup__box {
@@ -255,6 +256,11 @@
 }
 
 .popup__price-sum {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.popup__price-value {
   font-size: 20px;
   margin-left: 5px;
 }
