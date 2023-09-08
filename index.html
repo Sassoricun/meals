@@ -42,7 +42,7 @@
         </div>
         <div class="main__cards">
 
-          <div class="main__card">
+          <div class="main__card" data-id="01">
             <div class="main__img-item">
               <img class="main__img" src="images/meal-icon.svg" alt="">
             </div>
@@ -50,16 +50,16 @@
             <p class="main__subtitle">Finest fish and veggies</p>
             <div class="main__wrapper">
               <div class="main__counter counter-wrapper">
-                <div id="minus" class="main__counter-control" data-action="minus">-</div>
-                <div id="counter" class="main__counter-current" data-counter>0</div>
-                <div id="plus" class="main__counter-control" data-action="plus">+</div>
+                <div class="main__counter-control" data-action="minus">-</div>
+                <div class="main__counter-current" data-counter>1</div>
+                <div class="main__counter-control" data-action="plus">+</div>
               </div>
               <p class="main__price">22 $</p>
             </div>
-            <button class="main__btn" type="submit">+ Add</button>
+            <button class="main__btn" type="submit" data-cart>+ Add</button>
           </div>
 
-          <div class="main__card">
+          <div class="main__card" data-id="02">
             <div class="main__img-item">
               <img class="main__img" src="images/meal-icon.svg" alt="">
             </div>
@@ -68,15 +68,15 @@
             <div class="main__wrapper">
               <div class="main__counter counter-wrapper">
                 <div class="main__counter-control" data-action="minus">-</div>
-                <div class="main__counter-current" data-counter>0</div>
+                <div class="main__counter-current" data-counter>1</div>
                 <div class="main__counter-control" data-action="plus">+</div>
               </div>
-              <p class="main__price">22 $</p>
+              <p class="main__price">18 $</p>
             </div>
-            <button class="main__btn" type="submit">+ Add</button>
+            <button class="main__btn" type="submit" data-cart>+ Add</button>
           </div>
 
-          <div class="main__card">
+          <div class="main__card" data-id="03">
             <div class="main__img-item">
               <img class="main__img" src="images/meal-icon.svg" alt="">
             </div>
@@ -85,12 +85,12 @@
             <div class="main__wrapper">
               <div class="main__counter counter-wrapper">
                 <div class="main__counter-control" data-action="minus">-</div>
-                <div class="main__counter-current" data-counter>0</div>
+                <div class="main__counter-current" data-counter>1</div>
                 <div class="main__counter-control" data-action="plus">+</div>
               </div>
-              <p class="main__price">22 $</p>
+              <p class="main__price">34 $</p>
             </div>
-            <button class="main__btn" type="submit">+ Add</button>
+            <button class="main__btn" type="submit" data-cart>+ Add</button>
           </div>
 
         </div>
@@ -102,19 +102,8 @@
     <div class="container">
       <div class="popup__box">
         <h3 class="popup__title">Your order :</h3>
-        <div class="popup__cart">
-          <div class="popup__img-item">
-            <img class="popup__img" src="images/meal-icon.svg" alt="">
-          </div>
-          <div class="popup__info">
-            <p class="popup__text">Sushi</p>
-            <p class="popup__subtitle">Finest fish and veggies</p>
-            <div class="popup__counter counter-wrapper">
-              <div class="popup__counter-control" data-action="minus">-</div>
-              <div class="popup__counter-current" data-counter>1</div>
-              <div class="popup__counter-control" data-action="plus">+</div>
-            </div>
-          </div>
+        <div class="popup__carts">
+
         </div>
         <div class="popup__price">
           <p class="popup__price-text">All :</p>
@@ -128,6 +117,7 @@
 
 
   <script src="./js/counter.js"></script>
+  <script src="./js/cart.js"></script>
 </body>
 
 </html>
