@@ -1,7 +1,23 @@
 const cartWrapper = document.querySelector('.popup__carts')
 
 window.addEventListener('click', function (event) {
+  let count = 0;
+  const cartNum = document.getElementsByClassName('.header__cart-num');
+  // const cartBtn = document.getElementsByClassName('.main__btn');
+
+  // cartBtn.addEventListener('click', () => {
+  //   cartNum.innerText++;
+  //   // count++;
+
+  //   // cartNum.innerText = count;
+  // })
+
   if (event.target.hasAttribute('data-cart')) {
+    console.log('hell');
+    const cl = cartNum.classList;
+    count++;
+    cartNum.innerText = count;
+
     const card = event.target.closest('.main__card')
     const productInfo = {
       id: card.dataset.id,
@@ -11,9 +27,7 @@ window.addEventListener('click', function (event) {
       price: card.querySelector('.main__price').innerText,
       counter: card.querySelector('[data-counter]').innerText,
     }
-
     const itemInCart = cartWrapper.querySelector(`[data-id="${productInfo.id}"]`);
-    console.log(itemInCart);
     if (itemInCart) {
       const counterElement = itemInCart.querySelector('[data-counter');
       counterElement.innerText = parseInt(counterElement.innerText) + parseInt(productInfo.counter);
@@ -37,6 +51,6 @@ window.addEventListener('click', function (event) {
                             </div>`;
       cartWrapper.insertAdjacentHTML('beforeend', cartItemHTML)
     }
-    card.querySelector('[data-counter]').innerText = '1'
+    card.querySelector('[data-counter]').innerText = '1';
   }
 });
