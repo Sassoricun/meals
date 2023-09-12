@@ -112,7 +112,7 @@
   font-size: 14px;
   margin-bottom: 5px;
   text-align: center;
-  height: 40px;
+  min-height: 40px;
 }
 
 .main__counter {
@@ -197,13 +197,26 @@
 .popup__cart {
   display: flex;
   border-bottom: 1px solid #170e0e;
-  width: 400px;
+  min-width: 400px;
   margin: 0 auto;
   margin-bottom: 20px;
 }
 
+.popup__close-item {
+  margin-top: 40px;
+}
+
 .popup__img-item {
   margin-right: 20px;
+  cursor: pointer;
+}
+
+.popup__img {
+  margin-top: 20px;
+}
+
+.popup__info {
+  max-width: 150px;
 }
 
 .popup__text {
@@ -226,6 +239,7 @@
   font-size: 26px;
   margin-right: 10px;
   padding-bottom: 10px;
+  width: 60px;
 }
 
 .popup__counter {
